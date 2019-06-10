@@ -1,0 +1,281 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.ion-social-youtube{
+  margin: 0;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-youtube:hover{
+  color: #cd201f;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-twitter{
+  margin: 0;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-twitter:hover{
+  color: #55acee;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-facebook{
+  margin: 0;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-facebook:hover{
+  color: #3b5999;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-instagram{
+  margin: 0;
+  transition: 0.3s ease-out;
+}
+
+.ion-social-instagram:hover{
+  color: #e4405f;
+  transition: 0.3s ease-out;
+}
+
+#videobg {
+    position: fixed;
+    width: 100%;
+    
+  }
+  body{
+    background-image: linear-gradient(to bottom right , rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../img/landingbg2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .hero-text{
+    font-family: 'Montserrat';
+    margin-top: 3.5vh;
+    margin-bottom: 7vh;
+  }
+  .support-hero{
+    margin-bottom : 10vh;
+    font-family: Montserrat;
+    font-size: 18px;
+  }
+  .social-icons{
+    position: absolute;
+    top: 15%;
+    font-size:40px;
+    color:white;
+    display:inline-block;
+  }
+  .pos-rel{
+    position: relative;
+  }
+
+.scroll{
+  visibility: hidden;
+}
+  /* HAMBURGER NAVIGATION MENU CSS BELOW */
+
+  .nav-tgl {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    top: 30px;
+    width: 150px;
+    height: 70px;
+    border: none;
+    border-radius: 0%;
+    font-size: 16px;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
+    line-height: 0;
+    text-align: center;
+    transition:  0.5s;
+  
+  }
+
+  .curve_the_button{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    right: 65px;  
+    transition: 0.5s;
+  }
+ 
+  .nav-tgl > span {
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 34px;
+    border-radius: 1px;
+    background: #293335;
+    vertical-align: middle;
+  }
+  .nav-tgl > span:before, .nav-tgl > span:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    border-radius: 1px;
+    background: #293335;
+    transition: all 200ms;
+  }
+  .nav-tgl > span:before {
+    top: -11px;
+    left: 3px;
+    width: 28px;
+  }
+  .nav-tgl > span:after {
+    top: 11px;
+    left: 6px;
+    width: 22px;
+  }
+  .nav-tgl:focus {
+    outline: none;
+  }
+  .nav-tgl:hover > span:after, .nav-tgl:hover > span:before {
+    width: 34px;
+    left: 0;
+  }
+  .nav-tgl.toggled > span {
+    height: 0;
+  }
+  .nav-tgl.toggled > span:after, .nav-tgl.toggled > span:before {
+    top: 0px;
+    left: 0;
+    width: 34px;
+  }
+  .nav-tgl.toggled > span:after {
+    transform: rotate(-45deg);
+  }
+  .nav-tgl.toggled > span:before {
+    transform: rotate(45deg);
+  }
+  
+  .nav {
+    visibility: hidden !important;
+    z-index: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+    font-weight: 300;
+    transition: all 0.1s ease-in-out;
+    clip-path: circle(30px at calc(100% - 65px) 65px );
+    
+  }
+  
+  .active.nav {
+    visibility: visible !important;
+    clip-path: circle(100%);
+  }
+
+  .nav{
+      visibility: visible;
+      z-index: 5;
+      padding-top: 8vh;
+      padding-right: 8vw;
+  }
+  .nav ul{
+      text-decoration: none;
+      list-style: none;
+  }
+  .nav ul li{
+      text-decoration: none;
+  }
+  .nav ul li a{
+      color: white;
+      font-family: 'Lato';
+      font-size: 5vh;
+      display: block;
+      position: relative;
+      padding: 2vh;
+      text-align: center;
+  }
+  .nav ul li a:hover{
+      text-decoration: none;
+  }
+
+  .nav ul li a:before, .nav ul li a:after
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #2b456b;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.nav ul li a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+.nav ul li a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.nav ul li a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+.ActiveMainNav{
+  background-color: #2b456b;
+  color: black;
+}
+
+  
+/* HAMBURGER CSS MENU OVER */
+
+/*MAIN CONTENT CSS*/
+
+.container1{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 20vh;
+}
+.container1 #title{
+    font-family: 'Comfortaa'; 
+    font-weight: bolder;
+    font-size: 8vh;
+    margin-top: 2vh;
+}
+ .container1 .p1{
+     font-family: 'Montserrat';
+     font-size: 24px;
+ }
+
+ 
+ /*MAIN CONTENT CSS OVER*/
+
+
+ 
