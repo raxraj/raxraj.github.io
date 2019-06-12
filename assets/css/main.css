@@ -245,7 +245,7 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   h1, .h1 {
     font-size: 28px;
     margin-bottom: 15px;
