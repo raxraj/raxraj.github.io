@@ -251,7 +251,11 @@ img {
     margin-bottom: 15px;
     font-weight: 700;
   }
-  
+
+  .aboutvideo{
+    height: 200;
+    width: 377;
+  }
 
   h2, .h2 {
     font-size: 24px;
@@ -3152,6 +3156,6 @@ textarea.form-control {
   background-repeat: no-repeat;
 }
 .aboutvideo{
-  width: 442.5px;
-  height: 250px;
+  width: 533.33px;
+  height: 300px;
 }
