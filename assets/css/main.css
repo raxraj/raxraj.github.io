@@ -3464,8 +3464,8 @@ textarea.form-control {
 /* RESPONSIVE */
 @media screen and (max-width: 767px) {
 	.feedback-slider-item:after {
-		left: 30px;
-		right: 30px;
+    right: 30px;
+    font-size: 15px;
 	}
 	.customer-feedback .owl-nav [class*="owl-"] {
 		position: absolute;
@@ -3483,3 +3483,5 @@ textarea.form-control {
 	}
 	
 }
+/*GALLERY CSS*/
+
