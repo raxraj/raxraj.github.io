@@ -3,14 +3,15 @@
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
-    <meta name="description" content="Evento -Event Html Template">
-    <meta name="keywords" content="Evento , Event , Html, Template">
-    <meta name="author" content="ColorLib">
+    <meta name="description" content="Spark Talks is a Full-fledged event management Company.">
+    <meta name="keywords" content="spark talks">
+    <meta name="author" content="Ashutosh Kumar">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- ========== Title ========== -->
-    <title> Evento - Event Html Template</title>
+    <title>Spark Talks : Unleash the Spark</title>
     <!-- ========== Favicon Ico ========== -->
     <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
     <!-- ========== STYLESHEETS ========== -->
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -115,7 +116,7 @@
                         <div class="single_progressbar">
                             <div class="progress_text">
                                 <span>Motivation</span>
-                                <span class="progress_num" style="left:98%;">98%</span>
+                                <span class="progress_num" style="right:2%;">98%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" data-transitiongoal="80" aria-valuenow="98" style="width: 98%;"></div>
@@ -125,7 +126,7 @@
                         <div class="single_progressbar">
                             <div class="progress_text">
                                 <span>Fun</span>
-                                <span class="progress_num" style="left:90%;">90%</span>
+                                <span class="progress_num" style="right:10%;">90%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" data-transitiongoal="90" aria-valuenow="90" style="width: 90%;"></div>
@@ -135,7 +136,7 @@
                         <div class="single_progressbar">
                             <div class="progress_text">
                                 <span>Quality</span>
-                                <span class="progress_num" style="left:100%;">100%</span>
+                                <span class="progress_num" style="right:0%;">100%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" data-transitiongoal="75" aria-valuenow="75" style="width: 100%;"></div>
@@ -185,7 +186,7 @@
                             <p>
                                     Motivational speakers with their interesting perceptions can lead anyone to keep up positively in life.
                             </p>
-                            <a href="#motivational">read more</a>
+                            <a data-toggle="modal" href="#motivational">read more</a>
                         </div>
                     </div>
                 </div>
@@ -239,19 +240,25 @@
 
 <!--MODALS-->
 
-<div class="popup" id="motivational">
-    <div class="popup-inner">
-        <div class="popup__photo">
-        <img src="./assets/img/bg/slider.png" alt="">
-        </div>
-        <div class="popup__text">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
-        </div>
-        <a class="popup__close" href="#typesevent">X</a>
+<!-- Modal -->
+<div class="modal fade" id="motivational" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="top: 20%;" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Event Type Title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem possimus deserunt soluta atque consequatur odio porro. Velit qui voluptatem cumque voluptatum dolore sunt pariatur beatae quis aliquid! Repellendus, accusantium.Neque labore dicta corrupti, culpa ea illum, eaque repellat sequi laborum tempora architecto eos, assumenda dolore officia atque rerum. Maxime nesciunt delectus itaque aliquid quis dolor sunt illo vitae maiores.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
 </div>
-
 <!--MODALS END-->
 
 <!--footer start -->
